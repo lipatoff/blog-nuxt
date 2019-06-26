@@ -1,5 +1,5 @@
 # Blog with Nuxt.js
-
+[Demo](https://lipatoff.github.io/blog-nuxt/)
 > My fantabulous Nuxt.js project
 
 ## Build Setup
