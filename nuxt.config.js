@@ -69,6 +69,9 @@ export default {
       'vue',
       'axios'
     ],
+    
+    //publicPath: '/subcat/',
+
     /*
     ** You can extend webpack config here
     */
