@@ -1,6 +1,6 @@
 <template>
 	<nuxt-link :to="getLink" class="post-preview">
-		<img :src="post.img" :alt="post.title">
+		<img :src="$router.options.base+post.img" :alt="post.title">
 		<div class="post-content">
 			<h3 class="title">{{ post.title }}</h3>
 			<p>{{ post.descr }}</p>
