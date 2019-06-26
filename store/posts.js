@@ -18,6 +18,7 @@ export const mutations = {
 export const actions = {
 	//nuxt сам запускает данный экшн при инициализации
 	nuxtServerInit({commit}, context) {
+		console.log(process.env.DEPLOY_ENV)
 		return axios.get('https://blog-nuxt-4913a.firebaseio.com/posts.json')
 			.then(res=>{
 				const postsArray = []

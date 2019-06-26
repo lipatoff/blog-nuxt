@@ -61,17 +61,18 @@ export default {
     // }]
   ],
 
+  router: {
+    base: process.env.NODE_ENV === 'production' ? '/blog-nuxt/' : '/'
+  },
   /*
   ** Build configuration
   */
+
   build: {
     vendor: [
       'vue',
       'axios'
     ],
-    
-    //publicPath: '/subcat/',
-
     /*
     ** You can extend webpack config here
     */
