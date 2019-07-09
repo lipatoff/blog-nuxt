@@ -43,18 +43,6 @@ export default {
 
 		if (!post.data) context.error({ statusCode: 404 })
 
-		// let commentsArray = [],
-		// 	commentsArrayRes = []
-		// Object.keys(comments.data).forEach(key=>{
-		// 	commentsArray.push(comments.data[key])
-		// })
-
-		// for (let i=0; i<commentsArray.length; i++) {
-		// 	if (commentsArray[i].postId === context.params.id && commentsArray[i].publish === true){
-		// 		commentsArrayRes.push(commentsArray[i])
-		// 	}
-		// }
-
 		let commentsArrayRes = Object.values(comments.data).filter(comment => (comment.postId === context.params.id) && comment.publish)
 
 		return {

@@ -16,12 +16,12 @@ export const mutations = {
 export const actions = {
 	authUser({commit}, authData) {
 		const key = process.env.FB_KEY
-		console.log(key)
+
 		return axios.post(`https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${key}`, {
-			email: authData.email,
-			password: authData.password,
-			returnSecureToken: true
-		})
+				email: authData.email,
+				password: authData.password,
+				returnSecureToken: true
+			})
 			.then((res)=>{
 				let token = res.data.idToken
 				commit('setToken', token)

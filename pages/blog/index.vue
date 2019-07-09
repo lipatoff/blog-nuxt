@@ -27,7 +27,7 @@ export default {
   },
   computed: {
     postsLoaded() {
-      return this.$store.getters['posts/getPostsLoaded']
+      return this.$store.state.posts.postsLoaded
     }
   }
 }

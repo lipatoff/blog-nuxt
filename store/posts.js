@@ -52,7 +52,5 @@ export const actions = {
 	},
 }
 export const getters = {
-	getPostsLoaded(state) {
-		return state.postsLoaded
-	}
+
 }
